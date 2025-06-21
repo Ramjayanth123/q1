@@ -1,0 +1,113 @@
+{
+  "original_sentence": "delhi is capital of india",
+  "tokenization": {
+    "bpe": {
+      "tokens": [
+        "del",
+        "hi",
+        "\u0120is",
+        "\u0120capital",
+        "\u0120of",
+        "\u0120ind",
+        "ia"
+      ],
+      "token_ids": [
+        12381,
+        5303,
+        318,
+        3139,
+        286,
+        773,
+        544
+      ],
+      "token_count": 7
+    },
+    "wordpiece": {
+      "tokens": [
+        "delhi",
+        "is",
+        "capital",
+        "of",
+        "india"
+      ],
+      "token_ids": [
+        101,
+        6768,
+        2003,
+        3007,
+        1997,
+        2634,
+        102
+      ],
+      "token_count": 5
+    },
+    "sentencepiece": {
+      "tokens": [
+        "\u2581de",
+        "l",
+        "h",
+        "i",
+        "\u2581is",
+        "\u2581capital",
+        "\u2581of",
+        "\u2581india"
+      ],
+      "token_ids": [
+        20,
+        40,
+        107,
+        23,
+        19,
+        1784,
+        13,
+        18222,
+        1
+      ],
+      "token_count": 8
+    }
+  },
+  "mask_predictions": {
+    "masked_sentence_1": {
+      "sentence": "delhi is <mask> of india",
+      "masked_word": "capital",
+      "predictions": [
+        {
+          "token": "le",
+          "score": 0.8022985458374023,
+          "sequence": "delhi isle of india"
+        },
+        {
+          "token": "les",
+          "score": 0.08068805932998657,
+          "sequence": "delhi isles of india"
+        },
+        {
+          "token": "lam",
+          "score": 0.04430922493338585,
+          "sequence": "delhi islam of india"
+        }
+      ]
+    },
+    "masked_sentence_2": {
+      "sentence": "delhi is capital of <mask>",
+      "masked_word": "india",
+      "predictions": [
+        {
+          "token": " India",
+          "score": 0.4004403054714203,
+          "sequence": "delhi is capital of India"
+        },
+        {
+          "token": " Asia",
+          "score": 0.1103617399930954,
+          "sequence": "delhi is capital of Asia"
+        },
+        {
+          "token": " China",
+          "score": 0.10127989947795868,
+          "sequence": "delhi is capital of China"
+        }
+      ]
+    }
+  }
+}
